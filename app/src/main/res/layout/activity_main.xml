@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_cancel"
+                android:id="@+id/iv_close"
+                app:layout_constraintTop_toTopOf="@+id/iv_leaderboard"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_leaderboard" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" app:layout_constraintVertical_bias="0.0"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_leaderboard"
+                android:id="@+id/iv_leaderboard" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+        <TextView
+                android:text="Pick right meaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_game_title" android:textColor="#000"
+                android:textSize="27sp" android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="@+id/iv_game_scrn"
+                app:layout_constraintEnd_toEndOf="@+id/iv_game_scrn" android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_game_scrn" android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/testpic"
+                android:id="@+id/iv_game_scrn" app:layout_constraintStart_toStartOf="@+id/btn_play"
+                app:layout_constraintEnd_toEndOf="@+id/btn_play" android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_play"/>
+        <Button
+                android:text="Lets play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_game_btn"
+                android:id="@+id/btn_play" android:textAllCaps="false"
+                android:fontFamily="@font/poppins_semibold" android:textSize="25sp" android:textColor="#fff"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="128dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="128dp"
+                android:layout_marginBottom="225dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
