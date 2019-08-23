@@ -12,8 +12,14 @@
     <attr name="textBlockStyle" format="reference"/>
 
 
+    <style name="Normal_style" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/text_stroke</item>
+    </style>
+
+
     <!--For correct answer-->
-    <style name="Correct_style">
+    <style name="Correct_style" parent="AppTheme">
         <item name="android:background">@drawable/text_stroke_success</item>
         <item name="android:textColor">@color/font_icon_green</item>
         <item name="android:drawableEnd">@drawable/ic_right</item>
@@ -22,7 +28,7 @@
 
 
     <!--For wrong answer-->
-    <style name="Wrong_style">
+    <style name="Wrong_style" parent="AppTheme">
         <item name="android:background">@drawable/text_stroke_error</item>
         <item name="android:textColor">@color/error_red</item>
         <item name="android:drawableEnd">@drawable/ic_wrong</item>

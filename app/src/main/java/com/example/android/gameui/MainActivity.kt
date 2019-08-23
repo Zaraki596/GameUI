@@ -1,23 +1,16 @@
 package com.example.android.gameui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.game_ui.*
-import androidx.databinding.adapters.TextViewBindingAdapter.setText
-
 
 
 class MainActivity : AppCompatActivity() {
-    var timeInMilliseconds : Long = 60000
-    val timeRunning = true
-    internal lateinit var countDownTimer :CountDownTimer
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game_ui)
-
 
 
         //Setting countdown timer in seconds

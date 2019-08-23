@@ -23,10 +23,10 @@
                 android:id="@+id/iv_leaderboard" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
         <TextView
-                android:text="Pick right meaning"
+                android:text="@string/right_meaning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_game_title" android:textColor="#000"
+                android:id="@+id/tv_game_title" android:textColor="@color/black"
                 android:textSize="27sp" android:fontFamily="@font/poppins_semibold"
                 app:layout_constraintStart_toStartOf="@+id/iv_game_scrn"
                 app:layout_constraintEnd_toEndOf="@+id/iv_game_scrn" android:layout_marginBottom="16dp"
@@ -39,7 +39,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/btn_play" android:layout_marginBottom="24dp"
                 app:layout_constraintBottom_toTopOf="@+id/btn_play"/>
         <Button
-                android:text="Lets play"
+                android:text="@string/btn_lets_play"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_game_btn"

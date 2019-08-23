@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Game UI</string>
+    <string name="right_meaning">Pick right meaning</string>
+    <string name="btn_lets_play">Lets play</string>
+    <string name="words_meaning">Affidavit</string>
+    <string name="check_full_meaning">Check full meaning</string>
+    <string name="next">Next</string>
 </resources>
